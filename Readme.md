@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Yaroslav Lazovsky](https://up.htmlacademy.ru/htmlcss/25/user/995693).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Уразаев](https://up.htmlacademy.ru/htmlcss/25/user/61574).
 
 ---
 
