@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
   </head>
+  
   <body>
     <header class="main-header">
       <a><img src="img/logo-technomart.svg" width="136" height="22" alt="Логотип интернет-магазина Техномарт"></a>
-      <p>Поиск:</p>
+      <form class="search" action="#" method="get">
+        <label for="search-item">Поиск:</label>
+        <input type="text" name="search-item" id="search-item">
+      </form>
       <a class="btn tab" href="#">Закладки:</a>
       <a class="btn cart" href="#">Корзина:</a>
       <a class="btn сheckout" href="#">Оформить заказ</a>
@@ -181,29 +185,6 @@
         <a href="#" class="btn">Заблудились? Напишите нам!</a>
       </section>
 
-      <section class="modal modal-feedback">
-        <h2 class="visually-hidden">Обратная связь</h2>
-        <form class="feedback-form" action="#" method="post">
-          <label><b>Ваше имя:</b>
-            <input type="text" name="login" placeholder="Имя Фамилия">
-          </label>
-          <label><b>Ваш e-mail:</b>
-            <input type="e-mail" name="e-mail" placeholder="email@example.com">
-          </label>
-          <p><b>Текст письма:</b></p>
-          <textarea name="feedback" placeholder="В свободной форме" cols="70" rows="10"></textarea>
-          <div>
-            <button class="btn modal-submit" type="submit">Отправить</button>
-          </div>
-        </form>
-        <button class="modal-close" type="button" aria-label="Закрыть окно обратной связи">Закрыть</button>
-      </section> 
-
-      <section class="modal modal-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/map-index-modal.png" width="940" height="446" alt="Карта проезда">
-        <button class="modal-close" type="button" aria-label="Закрыть окно карты">Закрыть</button>
-      </section>
     </main>
 
     <footer class="main-footer">
@@ -253,6 +234,32 @@
       </div>
 
     </footer>
+
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <form class="feedback-form" action="#" method="post">
+        <div>
+          <label for="username">Ваше имя:</label>
+            <input type="text" name="login" id="username" placeholder="Имя Фамилия">
+        </div>
+        <div>
+          <label for="e-mail">Ваш e-mail:</label>
+            <input type="e-mail" name="e-mail" id="e-mail" placeholder="email@example.com">
+        </div>
+        <p>Текст письма:</p>
+        <textarea name="feedback" placeholder="В свободной форме" cols="70" rows="10"></textarea>
+        <div>
+          <button class="btn modal-submit" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть окно обратной связи">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map-index-modal.png" width="940" height="446" alt="Карта проезда">
+      <button class="modal-close" type="button" aria-label="Закрыть окно карты">Закрыть</button>
+    </section>
 
   </body>
 </html>

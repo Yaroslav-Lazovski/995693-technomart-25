@@ -7,11 +7,14 @@
     <title>Document</title>
 </head>
 
-<body>
+  <body>
     <header class="main-header">
       <a href="index.html"><img src="img/logo-technomart.svg" width="136" height="22"
           alt="Логотип интернет-магазина Техномарт"></a>
-      <p>Поиск:</p>
+      <form class="search" action="#" method="get">
+        <label for="search-item">Поиск:</label>
+        <input type="text" name="search-item" id="search-item">
+      </form>
       <a class="btn tab" href="#">Закладки:</a>
       <a class="btn cart" href="#">Корзина: 10</a>
       <a class="btn сheckout" href="#">Оформить заказ</a>
@@ -43,7 +46,7 @@
 
     <main>
         <ul class="breadcrumbs">
-          <li><a href="index.html"><img src="img/icon-home.svg" alt="Главная страница"></a></li>
+          <li><a href="index.html"><span class="visually-hidden">Главная страница</span></a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li class="breadcrumbs-current">Перфораторы</li>
@@ -52,50 +55,43 @@
         
         <section class="filters">
           <h3>Фильтр:</h3>
-          <p><b>Цена:</b></p>
+          <!-- Цена: -->
           <form class="filter" action="#" method="get">
             <fieldset>
-              <legend><b>Производители:</b></legend>
-              <ul>
+              <legend>Производители:</legend>
+              <ul class="manufacturers">
                 <li>
-                  <label>
-                    <input type="checkbox" name="bosch" checked>Bosch
-                  </label>
+                  <input type="checkbox" name="bosch" id="bosch" checked>
+                  <label for="bosch">Bosch</label>
                 </li>
                 <li>
-                  <label>
-                    <input type="checkbox" name="интерскол">Интерскол
-                  </label>
+                  <input type="checkbox" name="интерскол" id="interskol">
+                  <label for="interskol">Интерскол</label>
                 </li>
                 <li>
-                  <label>
-                    <input type="checkbox" name="makita" checked>Makita
-                  </label>
+                  <input type="checkbox" name="makita" id="makita" checked>
+                  <label for="makita">Makita</label>
                 </li>
                 <li>
-                  <label>
-                    <input type="checkbox" name="dewalt">Dewalt
-                  </label>
+                  <input type="checkbox" name="dewalt" id="dewalt">
+                  <label for="dewalt">Dewalt</label>
                 </li>
                 <li>
-                  <label>
-                    <input type="checkbox" name="hitachi">Hitachi
-                  </label>
+                  <input type="checkbox" name="hitachi" id="hitachi">
+                  <label for="hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend><b>Питание:</b></legend>
-              <ul>
+              <legend>Питание:</legend>
+              <ul class="power">
                 <li>
-                  <label>
-                    <input type="radio" name="product-group" value="accumulator" checked>Аккумуляторные
-                  </label>
+                  <input type="radio" name="product-group" id="accumulator" value="accumulator" checked>
+                  <label for="accumulator">Аккумуляторные</label>
                 </li>
                 <li>
-                  <label>
-                    <input type="radio" name="product-group" value="network">Сетевые
-                  </label>
+                  <input type="radio" name="product-group" id="network" value="network">
+                  <label for="network">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
@@ -105,11 +101,13 @@
 
         <section class="sorting">
           <h3>Сортировка:</h3>
-          <button type="button"><span>По цене</span></button>
-          <button type="button"><span>По типу</span></button>
-          <button type="button"><span>По функционалу</span></button>
-          <button type="button"><img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию"></button>
-          <button type="button"><img src="img/icon-down-dir.svg" alt="Сортировка по убыванию"></button>
+          <ul class="sorting-list">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По функционалу</a></li>
+            <li><a class="sort-up" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+            <li><a class="sort-down" href="#"><span class="visually-hidden">По убыванию</span></a> </li>
+          </ul>
         </section>
 
         <section class="catalog">
@@ -212,13 +210,6 @@
               устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </section>
 
-        <section class="modal modal-cart">
-          <img src="img/form-1.svg" alt="">
-          <p><b>Товар добавлен в корзину!</b></p>
-          <a class="btn" href="#">Оформить заказ</a>
-          <button class="btn" type="button">Продолжить покупки</button>
-          <button class="modal-close" type="button">Закрыть</button>
-        </section>
     </main>
 
     <footer class="main-footer">
@@ -269,6 +260,13 @@
       </div>
 
     </footer>
+
+    <section class="modal modal-cart">
+      <h2>Товар добавлен в корзину!</h2>
+      <a class="btn" href="#">Оформить заказ</a>
+      <button class="btn" type="button">Продолжить покупки</button>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
     
-</body>
+  </body>
 </html>
