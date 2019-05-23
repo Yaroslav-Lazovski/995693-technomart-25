@@ -220,7 +220,7 @@ a {
 
 .breadcrumbs a,
 .breadcrumbs li {
-    font-family: PTSans;
+    font-family: "PT Sans";
     font-size: 13px;
     line-height: 18px;
     color: #000000;
@@ -236,7 +236,7 @@ a {
 }
 
 .filters h3 {
-  font-family: PTSans;
+  font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
 }
@@ -246,7 +246,7 @@ a {
 }
 
 .filter legend {
-  font-family: PTSans;
+  font-family: "PT Sans";
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
@@ -255,12 +255,12 @@ a {
 .filter ul {
   list-style: none;
   line-height: 20px;
-  font-family: PTSans;
+  font-family: "PT Sans";
   font-size: 15px;
 }
 
 .filters button {
-  font-family: PTSans;
+  font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
 
@@ -277,21 +277,21 @@ a {
 }
 
 .catalog-list h3 {
-    font-family: PTSans;
+    font-family: "PT Sans";
     font-size: 18px;
     font-weight: bold;
     line-height: 20px;
 }
 
 .price {
-    font-family: PTSans;
+    font-family: "PT Sans";
     font-size: 17px;
     font-weight: bold;
     line-height: 18px;
 }
 
 .old-price {
-     font-family: PTSans;
+     font-family: "PT Sans";
      font-size: 17px;
      font-weight: bold;
      line-height: 18px;
@@ -309,7 +309,7 @@ a {
 }
 
 .about p {
-    font-family: PTSans;
+    font-family: "PT Sans";
     font-size: 13px;
     line-height: 24px;
     text-align: left;
@@ -336,7 +336,7 @@ a {
 }
 
 .contacts p {
-    font-family: PTSans;
+    font-family: "PT Sans";
     font-size: 13px;
     line-height: 24px;
 }
