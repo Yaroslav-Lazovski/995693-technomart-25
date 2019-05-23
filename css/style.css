@@ -128,15 +128,15 @@ a {
 .main-header h1 {
     width: 196px;
     height: 60px;
-    font-family: Cuprum;
+
     font-size: 16px;
+    font-weight: 700;
     font-style: italic;
     line-height: 23px;
     color: #ee3643;
 }
 
 .tel {
-    font-family: Cuprum;
     font-size: 21px;
     line-height: 21px;
     letter-spacing: 0.4px;
@@ -293,7 +293,7 @@ a {
 .old-price {
      font-family: "PT Sans";
      font-size: 17px;
-     font-weight: bold;
+     font-weight: 700;
      line-height: 18px;
      color: #999999;
      text-decoration: line-through;
@@ -303,9 +303,31 @@ a {
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
+.popular-items h2,
+.popular-companies h2 {
+    color: #32425c;
+}
+
+.popular-items h2,
+.popular-companies h2,
+.services h2,
 .about h2 {
     font-size: 30px;
     line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.delivery-description h3 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #32425c;
+}
+
+.delivery-description p {
+    font-family: "PT Sans";
+    font-size: 13px;
+    line-height: 24px;
 }
 
 .about p {
@@ -319,6 +341,7 @@ a {
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .partners {
@@ -328,11 +351,13 @@ a {
 .partners li {
     font-size: 18px;
     line-height: 20px;
+    font-weight: 700;
 }
 
 .contacts h2 {
     font-size: 30px;
     line-height: 30px;
+    text-transform: uppercase;
 }
 
 .contacts p {
@@ -345,6 +370,7 @@ a {
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .footer-top {
