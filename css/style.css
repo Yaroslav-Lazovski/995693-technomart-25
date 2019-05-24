@@ -314,7 +314,7 @@ a {
 .about h2 {
     font-size: 30px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -326,6 +326,7 @@ a {
 
 .delivery-description h3 {
     font-size: 36px;
+    font-weight: 400;
     line-height: 36px;
     color: #32425c;
 }
@@ -357,7 +358,6 @@ a {
 .partners li {
     font-size: 18px;
     line-height: 20px;
-    font-weight: 700;
 }
 
 .contacts h2 {
@@ -384,7 +384,9 @@ a {
 }
 
 .contacts-footer {
-    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    color: #f3f7f9;
 }
 
 .nav-footer,
@@ -396,13 +398,13 @@ a {
 .nav-footer a {
     font-size: 18px;
     line-height: 24px;
-    color: #ffffff;
+    color: #f1f5f7;
 }
 
 .nav-footer-gold a {
     font-size: 18px;
     line-height: 24px;
-    color: #ffda96;
+    color: #ffd180;
 }
 
 .nav-footer a:hover,
@@ -449,13 +451,12 @@ a {
 .developer a {
     font-size: 16px;
     line-height: 18px;
-    color: #ffda96;
+    color: #ffd180;
 }
 
 .email a:hover,
 .developer a:hover {
     text-decoration: underline;
-    color: #ffda96;
 }
 
 .email a:active,
