@@ -229,6 +229,10 @@ a {
     background-color: #1d2739;
 }
 
+.main-nav {
+    padding-bottom: 60px;
+}
+
 .breadcrumbs {
     list-style: none;
 }
@@ -244,6 +248,7 @@ a {
 .hammers {
     font-size: 30px;
     line-height: 30px;
+    font-weight: 400;
     text-align: left;
     color: #32425c;
     
@@ -254,6 +259,7 @@ a {
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
+  font-weight: 400;
 }
 
 .filter fieldset {
@@ -486,7 +492,6 @@ a {
 /* ----- Сеточные стили ----- */
 
 .container {
-    display: flex;
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
@@ -530,6 +535,12 @@ a {
 }
 
 .header-middle h1,
+.header-middle p {
+    margin: 0;
+    padding: 0;
+}
+
+.header-middle h1,
 .header-contacts,
 .user-nav {
     width: 300px;
@@ -547,9 +558,15 @@ a {
     padding: 0;
 }
 
+.main-nav {
+    margin-top: 44px;
+}
+
 .site-nav {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
     margin-top: 44px;
     padding-top: 22px;
     padding-bottom: 23px;
@@ -579,6 +596,7 @@ a {
 }
 
 .footer-top .container {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -622,7 +640,6 @@ a {
 .footer-bottom {
     width: 960px;
     margin: 0 auto;
-    padding: 35px 0 35px 0;
 }
 
 .footer-copyright p,
@@ -634,7 +651,13 @@ a {
 }
 
 .footer-bottom .container {
+    display: flex;
     justify-content: space-between;
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 32px;
 }
 
 .footer-copyright {
@@ -659,3 +682,73 @@ a {
 .developer {
     width: 110px;
 }
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    margin-top: 23px;
+}
+
+.hammers {
+    margin: 0;
+    padding: 0;
+    margin-top: 22px;
+    padding-top: 28px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.filters {
+    width: 220px;
+}
+
+.catalog {
+    width: 700px;
+}
+
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.sorting {
+    width: 700px;
+
+    min-height: 38px;
+}
+
+.sorting-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    order: 0;
+}
+
+.catalog-item {
+    width: 218px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    min-height: 318px;
+    border: 1px solid #e5e5e5;
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination-list {
+    margin: 0;
+    padding: 0;
+    margin-top: 52px;
+}
+
+
