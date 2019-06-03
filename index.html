@@ -32,14 +32,23 @@
 
       <div class="header-middle">
         <div class="container">
-          <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          <div class="header-middle-tittle-wrapper">
+            <h1>Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
+          </div>
           <div class="header-contacts">
             <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="user-nav">
             <ul class="check-in">
-              <li><a class="login" href="#">Войти</a></li>
+              <li><a class="login" href="#">Войти<svg xmlns="http://www.w3.org/2000/svg" width="20" height="17"
+                    viewBox="0 0 20 17">
+                    <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z" />
+                    <path fill="#c5c5c5"
+                      d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
+                    </svg>
+                  </a>
+              </li>
               <li><a class="registration" href="#">Регистрация</a></li>
             </ul>
           </div>
@@ -213,7 +222,7 @@
     <footer class="main-footer">
       <div class="footer-top">
         <div class="container">
-          <a class="logo logo-footer"><img src="img/logo-technomart.svg" width="109" height="19"
+          <a class="logo logo-footer"><img src="img/logo-technomart.svg" width="138" height="23"
               alt="Логотип интернет-магазина Техномарт"></a>
 
           <ul class="nav-footer">
@@ -249,9 +258,9 @@
 
           <div class="footer-social">
             <ul>
-              <li><a class="social-vk" href="#">Вконтакте</a></li>
-              <li><a class="social-facebook" href="#">Фейсбук</a></li>
-              <li><a class="social-instagram" href="#">Инстаграм</a></li>
+              <li><a class="social social-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+              <li><a class="social social-facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+              <li><a class="social social-instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
             </ul>
           </div> 
 
@@ -271,27 +280,29 @@
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="feedback-form" action="#" method="post">
-        <div>
-          <label for="username">Ваше имя:</label>
-            <input type="text" name="login" id="username" placeholder="Имя Фамилия">
+        <div class="user-info">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="login" id="name" placeholder="Имя Фамилия">
         </div>
-        <div>
+        <div class="user-mail">
           <label for="e-mail">Ваш e-mail:</label>
-            <input type="e-mail" name="e-mail" id="e-mail" placeholder="email@example.com">
+          <input type="e-mail" name="e-mail" id="e-mail" placeholder="email@example.com">
         </div>
-        <p>Текст письма:</p>
-        <textarea name="feedback" placeholder="В свободной форме" cols="70" rows="10"></textarea>
-        <div>
+        <div class="message">
+          <p>Текст письма:</p>
+          <textarea name="feedback" placeholder="В свободной форме" cols="70" rows="10"></textarea>
+        </div>
+        <div class="modal-bottom">
           <button class="btn modal-submit" type="submit">Отправить</button>
         </div>
       </form>
-      <button class="modal-close" type="button" aria-label="Закрыть окно обратной связи">Закрыть</button>
+      <button class="close close-feedback" type="button"><span class="visually-hidden">Закрыть окно обратной связи</span></button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map-index-modal.png" width="940" height="446" alt="Карта проезда">
-      <button class="modal-close" type="button" aria-label="Закрыть окно карты">Закрыть</button>
+      <button class="close close-map" type="button"><span class="visually-hidden">Закрыть окно карты</span></button>
     </section>
 
   </body>
