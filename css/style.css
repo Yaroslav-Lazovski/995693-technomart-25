@@ -80,7 +80,7 @@ img {
     width: 490px;
 }
 
-.header-top .logo img {
+.logo img {
     position: absolute;
     top: 0;
     left: 0;
@@ -470,11 +470,11 @@ img {
     color: #ffffff;
 }
 
-.site-nav li:first-child a {
+.site-item:first-child a {
     padding-left: 52px;
 }
 
-.site-nav li:last-child a {
+.site-item:last-child a {
     padding-right: 60px;
 }
 
@@ -716,7 +716,6 @@ img {
 }
 
 .catalog {
-    
     width: 700px;
 }
 
@@ -811,8 +810,10 @@ img {
     z-index: 10;
 }
 
-.catalog-item .actions .buy,
-.catalog-item .actions .bookmark {
+.actions .buy,
+.actions .bookmark {
+    position: relative;
+
     display: block;
     width: 129px;
     margin: 0 auto;
@@ -831,7 +832,7 @@ img {
     border-radius: 3px;
 }
 
-.catalog-item .actions .bookmark {
+.actions .bookmark {
     color: #32425c;
 
     background: white;
@@ -844,6 +845,47 @@ img {
 
 .catalog-item:hover .actions {
     display: block;
+}
+
+.actions .buy::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 12px;
+
+    width: 15px;
+    height: 15px;
+
+    background: url("../img/icon-cart.svg") no-repeat 0 0;
+
+    opacity: 0.3;
+}
+
+.actions .buy:hover::before,
+.actions .buy:active::before,
+.actions .buy:focus::before {
+    opacity: 1;
+}
+
+.actions .buy:hover {
+    background-color: #5fbb2d;
+    border: 3px solid #5fbb2d;
+    border-bottom-color:#367315;
+}
+
+.actions .buy:active,
+.actions .buy:focus {
+    background-color: #518534;
+    border: 3px solid #518534;
+}
+
+.actions .bookmark:hover {
+    border: 3px solid #32425c;
+}
+
+.actions .bookmark:active,
+.actions .bookmark:focus {
+    opacity: 0.3;
 }
 
 .catalog-item:nth-child(3n) {
@@ -993,7 +1035,7 @@ img {
     position: relative;
 }
 
-.container .logo-footer img {
+.logo-footer img {
     position: absolute;
     top: 0;
     left: 10px;
