@@ -91,8 +91,24 @@
         <div class="catalog-columns">
           <section class="filters">
             <form class="filter" action="#" method="get">
-              <!-- <h3>Фильтр:</h3>
-              Цена: -->
+              <h3>Фильтр:</h3>
+              <fieldset class="filter-item">
+                <legend class="price-legend">Цена:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price"><input type="text" name="min-price"  value="0"></label>
+                    <label class="max-price"><input type="text" name="max-price"  value="30000"></label>
+                  </div>
+                </div>
+              </fieldset>
+              
               <fieldset>
                 <legend>Производители:</legend>
                 <ul class="manufacturers">
@@ -135,18 +151,19 @@
             </form>
           </section>
 
-          <!-- <section class="sorting">
-            <h3>Сортировка:</h3>
-            <ul class="sorting-list">
-              <li><a href="#">По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По функционалу</a></li>
-              <li><a class="sort-up" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
-              <li><a class="sort-down" href="#"><span class="visually-hidden">По убыванию</span></a> </li>
-            </ul>
-          </section> -->
-
           <section class="catalog">
+            <div class="sorting">
+              <h3>Сортировка:</h3>
+              <ul class="sorting-list">
+                <li><a class="sort-price" href="#">По цене</a></li>
+                <li><a class="sort-type" href="#">По типу</a></li>
+                <li><a class="sort-function" href="#">По функционалу</a></li>
+                <li><a class="sort-up" href="#"><span class="visually-hidden">По возрастанию</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg></a></li>
+                <li><a class="sort-down" href="#"><span class="visually-hidden">По убыванию</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#231F20" d="M5.5 10L0 0h11" /></svg></a></li>
+              </ul>
+            </div>
             <ul class="catalog-list">
               <li class="catalog-item">
                 <div class="actions">
@@ -161,6 +178,7 @@
                 <span class="old-price">22500 Р.</span>
                 <a href="#" class="btn price">15500 Р.</a>
               </li>
+
               <li class="catalog-item">
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
@@ -174,6 +192,7 @@
                 <span class="old-price">30500 Р.</span>
                 <a href="#" class="btn price">25500 Р.</a>
               </li>
+
               <li class="catalog-item new-item">
                 <div class="flag flag-new">Новинка</div>
                 <div class="actions">
@@ -188,6 +207,7 @@
                 <span class="old-price"></span>
                 <a href="#" class="btn price">12500 Р.</a>
               </li>
+
               <li class="catalog-item">
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
@@ -201,6 +221,7 @@
                 <span class="old-price">22500 Р.</span>
                 <a href="#" class="btn price">15500 Р.</a>
               </li>
+
               <li class="catalog-item new-item">
                 <div class="flag flag-new">Новинка</div>
                 <div class="actions">
@@ -215,6 +236,7 @@
                   <span class="old-price">30500 Р.</span>
                 <a href="#" class="btn price">25500 Р.</a>
               </li>
+
               <li class="catalog-item">
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
@@ -228,6 +250,7 @@
                 <span class="old-price"></span>
                 <a href="#" class="btn price">12500 Р.</a>
               </li>
+
               <li class="catalog-item new-item">
                 <div class="flag flag-new">Новинка</div>
                 <div class="actions">
@@ -242,6 +265,7 @@
                 <span class="old-price">22500 Р.</span>
                 <a href="#" class="btn price">15500 Р.</a>
               </li>
+
               <li class="catalog-item">
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
@@ -255,6 +279,7 @@
                 <span class="old-price">30500 Р.</span>
                 <a href="#" class="btn price">25500 Р.</a>
               </li>
+              
               <li class="catalog-item">
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
@@ -273,7 +298,7 @@
               <li class="pagination-item pagination-item-current"><a>1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
-              <li class="pagination-item"><a href="#">Следующая</a></li>
+              <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
             </ul>
           </section>
         </div>
@@ -343,9 +368,7 @@
             <p>Разработано —</p>
             <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
           </div>
-
         </div>
-
     </footer>
 
     <section class="modal modal-cart">
@@ -357,5 +380,6 @@
       <button class="close-cart" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     
+  <script src="js/script.js"></script>
   </body>
 </html>
