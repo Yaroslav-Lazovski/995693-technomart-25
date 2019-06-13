@@ -1150,6 +1150,15 @@ img {
     background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
 
+.filter-input-checkbox + label:hover::before,
+.filter-input-checkbox:not(:checked) + label:hover::before {
+    background: url("../img/checkbox-off-active.svg") no-repeat 0 0;
+}
+
+.filter-input-checkbox:checked + label:hover::after {  
+    background: url("../img/checkbox-on-active.svg") no-repeat 0 0;
+}
+
 .filter-input-radio + label::before {
     content: "";
 
@@ -1175,6 +1184,22 @@ img {
 
     background: url("../img/radio-on.svg") no-repeat 0 0;
 }
+
+.filter-input-radio + label:hover::before {
+    background: url("../img/radio-off-active.svg") no-repeat 0 0;
+}
+
+.filter-input-radio:checked + label:hover::after {
+    background: url("../img/radio-on-active.svg") no-repeat 0 0;
+}
+
+.filter-input-checkbox:disabled + label {
+    opacity: 0.4;
+} 
+
+.filter-input-radio:disabled + label {
+    opacity: 0.4;
+} 
 
 .filters button {
     width: 140px;
@@ -1916,6 +1941,17 @@ img {
 
 .pagination-item:last-child {
     margin-right: 0;
+}
+
+.pagination-item a:hover {
+    border: 1px solid #bdc6ca;
+    border-radius: 3px;
+}
+
+.pagination-item a:active,
+.pagination-item a:focus {
+    border: 1px solid #ee3643;
+    border-radius: 3px;
 }
 
 .pagination-item a {
