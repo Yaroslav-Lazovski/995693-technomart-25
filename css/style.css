@@ -2183,12 +2183,26 @@ img {
     }
 }
 
-.modal-feedback {
+.modal {
     position: fixed;
+
+    display: none;
+}
+
+.modal-show {
+    display: block;
+
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
+.modal-feedback {
     bottom: 220px;
     left: 50%;
 
-    display: none;
     width: 620px;
     height: 430px;
     margin-left: -310px;
@@ -2196,10 +2210,6 @@ img {
     background-color: #ffffff;
     box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
     z-index: 100;
-}
-
-.modal-error {
-    animation: shake 0.6s;
 }
 
 .feedback-form input,
@@ -2320,9 +2330,6 @@ img {
 }
 
 .modal-map {
-    position: fixed;
-
-    display: none;
     width: 940px;
     height: 446px;
     top: 115px;
@@ -2360,11 +2367,9 @@ img {
 }
 
 .modal-cart {
-    position: fixed;
     top: 421px;
     left: 50%;
 
-    display: none;
     box-sizing: border-box;
     width: 620px;
     min-height: 282px;
@@ -2453,12 +2458,6 @@ img {
 
     background: url("../img/icon-close.svg") no-repeat 0 0;
     border: none;
-}
-
-.modal-show {
-    display: block;
-
-    animation: bounce 0.6s;
 }
 
 /* ----- Сеточные стили ----- */

@@ -36,7 +36,6 @@ if (linkFeedback) {
     form.addEventListener("submit", function(evt) {
         if (!login.value || !email.value) {
             evt.preventDefault();
-            console.log("Нужно ввести логин и пароль");
             popupFeedback.classList.remove("modal-error");
             popupFeedback.offsetWidth = popupFeedback.offsetWidth;
             popupFeedback.classList.add("modal-error");   
@@ -75,8 +74,8 @@ if(linkMap) {
     });
 
     window.addEventListener("keydown", function (evt) {
-        evt.preventDefault();
         if (evt.keyCode === 27) {
+            evt.preventDefault();
             if (popupMap.classList.contains("modal-show")) {
                 popupMap.classList.remove("modal-show");
             }
@@ -88,7 +87,7 @@ if(linkMap) {
 var linkBookmark = document.querySelectorAll(".bookmark");
 if(linkBookmark) {
     var popupCart = document.querySelector(".modal-cart");
-    var closeCart = popupCart.querySelector(".close-cart");
+    var closeCart = document.querySelector(".close-cart");
 
     for (var i = 0; i < linkBookmark.length; i++) {
         linkBookmark[i].onclick = function (evt) {
@@ -102,15 +101,14 @@ if(linkBookmark) {
         });
 
         window.addEventListener("keydown", function (evt) {
-         evt.preventDefault();
-         if (evt.keyCode === 27) {
+            if (evt.keyCode === 27) {
+                evt.preventDefault();
              if (popupCart.classList.contains("modal-show")) {
                  popupCart.classList.remove("modal-show");
                 }
             }
         });
     }
-
 }
 
 
